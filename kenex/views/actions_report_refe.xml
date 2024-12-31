@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- explicit  actions Menu Models Reporte Referencia Lista -->
+        <record model="ir.actions.server" id="actions_report_refe">
+            <field name="name">Consultar Referencia Lista</field>
+            <field name="model_id" ref="sale.model_sale_order"/>
+            <field name="binding_model_id" ref="sale.model_sale_order"/>
+            <field name="binding_view_types">form,list</field>
+            <field name="state">code</field>
+            <field name="code">action = records.actions_funcion_refe()</field>
+        </record>
+    </data>    
+</odoo>

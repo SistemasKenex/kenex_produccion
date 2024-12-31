@@ -1,0 +1,26 @@
+<odoo>
+    <data>
+    <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="kenex.form_view_report_pci">
+        <field name="name">Vista Formulario Reporte PCI </field>
+        <field name="model">kenex.kenex</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button string="Aceptar" type="object" name="ejecutar_reporte_pci" class="oe_highlight"/>
+                    <button string="Cancelar" type="object" name="cancelar_reporte_pci"/>
+                    <button class="oe_stat_button" name="%(module_name.open_patient_appointment)d" type="action">
+                            <field string="Appointment" name="appointments_count" widget="statinfo"/>
+                    </button>
+                </header>        
+                    <sheet>
+                        <group>
+                            <field name="fecha_desde"/>
+                            <field name="fecha_hasta"/>
+                        </group>
+                    </sheet> 
+            </form>
+        </field>
+        </record>
+    </data>
+</odoo>

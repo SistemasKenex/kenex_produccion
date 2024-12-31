@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+       <record model="ir.ui.view" id="kenex.action_kcrea_funcion">
+            <field name="name">Creacion de funciones en la base de datos postgres</field>
+            <field name="model">kcrea.funcion</field>
+            <field name="arch" type="xml">
+                <tree create="0" delete='0'>
+                    <header>
+                        <button name="btn_generar" type="object" string="Generar Funcion" class="oe_highlight" />
+                        <button name="btn_secuencia" type="object" string="Generar Secuencia" class="oe_highlight" />
+                    </header>
+                    <field name="id"/>  
+                    <field name="name"/>         
+                </tree>
+            </field>
+        </record>
+     </data>
+</odoo>

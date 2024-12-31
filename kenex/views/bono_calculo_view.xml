@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- explicit  view  tree kbono.comisiones -->
+        <record model="ir.ui.view" id="kenex.action_kbono_calculo_view">
+            <field name="name">Detalle Calculo Bono</field>
+            <field name="model">kbono.calculo</field>
+            <field name="arch" type="xml">
+                <tree create="0" delete='0'>
+                <header>
+                            <button name="action_view_order_lines" type="object" string="Consultar Ventas" class="oe_highlight" />
+                </header>
+                    <field name="company_id"/> 
+                    <field name="documento"/>
+                    <field name="fecha_orden"/>
+                    <field name="vendedor"/>
+                    <field name="producto"/>
+                    <field name="almacen"/>
+                    <field name="pedido"/>
+                    <field name="fechadesde"/>
+                    <field name="fechahasta"/>
+                    <field name="descripcion"/>
+                    <field name="monto_bono"/>
+                    <field name="meta"/>
+                    <field name="calculo_bono"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo> 
+
+
+    

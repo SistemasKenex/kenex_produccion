@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sale_order_aprobacion_hide" model="ir.ui.view">
+        <field name="name">sale.order.aprobacion.hide</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale_order_line_view_inherit_1"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='it_check_aprobar_empaque']" position="attributes"> 
+                <attribute name="groups">kenex.group_show_aprobacion</attribute>
+            </xpath>
+            <xpath expr="//field[@name='it_check_aprobar_facturacion']" position="attributes"> 
+                <attribute name="groups">kenex.group_show_aprobacion</attribute>
+            </xpath>
+            <xpath expr="//field[@name='it_check_aprobar_pre_venta']" position="attributes"> 
+                <attribute name="groups">kenex.group_show_aprobacion</attribute>
+            </xpath>
+        </field>                    
+    </record>
+</odoo>

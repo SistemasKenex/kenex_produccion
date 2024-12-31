@@ -1,0 +1,25 @@
+<odoo>
+    <data>
+    <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="kenex.form_view_report_refe">
+        <field name="name"> Reporte Referencia Lista </field>
+        <field name="model">report.refe</field>
+        <field name="arch" type="xml">
+            <tree create="false" edit="false">
+                <field name="articulo"/>
+                <field name="nro_pedido"/>
+                <field name="fecha"/>
+                <field name="cantidad"/>
+                <field name="nombre_cliente"/>
+                <field name="precio"/>
+                <field name="pais"/>
+                <field name="estado_cotizacion"/>
+                <field name="estado_bodega"/>
+                <field name="vendedor"/>
+            </tree>
+        </field>
+        </record>
+    </data>
+</odoo>
+
+

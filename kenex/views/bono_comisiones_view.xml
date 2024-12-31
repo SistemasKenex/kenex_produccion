@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- explicit  view  tree kbono.comisiones -->
+        <record model="ir.ui.view" id="kenex.action_kbono_comisiones_view">
+            <field name="name">Bonos x Rango de fecha</field>
+            <field name="model">kbono.comisiones</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="company_id"/> 
+                    <field name="codigo_bono_id"/>
+                    <field name="descripcion"/>
+                    <field name="fechadesde"/>
+                    <field name="fechahasta"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- explicit  view  tree kbono.coarinbo -->
+        <record model="ir.ui.view" id="kenex.action_kbono_arinbo_view">
+            <field name="name">Modelo temporal para la importacion de kbono.comisiones y kbono.detalle</field>
+            <field name="model">kbono.arinbo</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <header>
+                        <button name="btn_generar" type="object" string="Generar" class="oe_highlight" />
+                    </header>
+                    <field name="company_id"/> 
+                    <field name="codigo_bono_id"/>
+                    <field name="descripcion"/>
+                    <field name="fechadesde"/>
+                    <field name="fechahasta"/>
+                    <field name="warehouse_id"/>   
+                    <field name="product_id"/>      
+                    <field name="monto_bono"/>      
+                    <field name="meta"/> 
+                    <field name="monto_meta"/>                
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo> 

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="kenex.pricelist_item_sellers_tree_windows">
+            <field name="name">Lista de Precio Vendedores </field>
+            <field name="model">product.pricelist.item.sellers</field>
+            <field name="arch" type="xml">
+                <tree create="false" edit="false">
+                    <field name="articulo"/> 
+                    <field name="lista_precio_an"/> 
+                    <field name="lista_precio_cn"/> 
+                    <field name="lista_precio_do"/> 
+                    <field name="lista_precio_ds"/> 
+                    <field name="lista_precio_es"/> 
+                    <field name="lista_precio_fk"/> 
+                    <field name="lista_precio_fr"/> 
+                    <field name="lista_precio_fv"/> 
+                    <field name="lista_precio_ms"/> 
+                    <field name="lista_precio_p_plus"/> 
+                    <field name="lista_precio_pa"/> 
+                    <field name="lista_precio_pb"/> 
+                    <field name="lista_precio_pr"/> 
+                    <field name="lista_precio_ta"/> 
+                    <field name="lista_precio_tm"/> 
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

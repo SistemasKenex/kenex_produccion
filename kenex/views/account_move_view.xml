@@ -1,0 +1,26 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="account_move_view_form_inherit_1">
+            <field name="name">account.move.view.form.inherit</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_invoice_tree"/>
+            <field name="priority" eval="100"/>
+            <field name="arch" type="xml">
+                    <xpath expr="//field[@name='name']" position="before">
+                            <field name="move_type"/>
+                    </xpath>
+            </field>
+        </record>	
+
+        <!-- explicit  view  pivot ccount.move-->
+        <record model="ir.ui.view" id="account_move_view_pivot">
+            <field name="name">account.move.view.pivot.inherit</field>
+            <field name="model">account.move</field>
+            <field name="arch" type="xml">
+                <pivot>
+                    <field name="move_type"/> 
+                </pivot>
+            </field>
+        </record>
+    </data>
+</odoo>

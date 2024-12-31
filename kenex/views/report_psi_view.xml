@@ -1,0 +1,54 @@
+<odoo>
+    <data>
+    <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="kenex.form_view_report_psi">
+        <field name="name"> Reporte Psi Lista </field>
+        <field name="model">report.psi</field>
+        <field name="arch" type="xml">
+            <tree create="false" edit="false">
+                <field name="articulo"/>
+                <field name="clase"/>
+                <field name="ex_france_field"/>
+                <field name="transito"/>
+                <field name="f_ult_ec_wh"/>
+                <field name="f_ult_ec_kenex"/>
+                <field name="f_ult_ec_showroom_zl"/>
+                <field name="f_ult_ec_cubbit_albrook_tigre"/>
+                <field name="f_ult_ec_mayor_panama"/>
+                <field name="f_ult_ec_casio_albrook_carrusel"/>
+                <field name="f_ult_ec_multiplaza"/>
+                <field name="f_ult_ec_metromall"/>
+                <field name="f_ult_ec_albrook_pinguino"/>
+                <field name="f_ult_ec_altaplaza_mall"/>
+                <field name="f_ult_ec_los_andes_mall"/>
+                <field name="f_ult_ec_wesland_mall"/>
+                <field name="f_ult_ec_basaidai"/>
+                <field name="precio_base"/>
+                <field name="ex_wh"/>
+                <field name="ex_kenex"/>
+                <field name="ex_showroom_zl"/>
+                <field name="ex_cubitt_albrook_tigre"/>
+                <field name="ex_mayor_panama"/>
+                <field name="ex_casio_albrook_carrusel"/>
+                <field name="ex_multiplaza"/>
+                <field name="ex_metromall"/>
+                <field name="ex_albrook_pinguino"/>
+                <field name="ex_altaplaza_mall"/>
+                <field name="ex_los_andes_mall"/>
+                <field name="ex_westland_mall"/>
+                <field name="ex_basaidai"/>
+                <field name="ventas"/>
+                <field name="ex_mes6"/>
+                <field name="ex_mes5"/>
+                <field name="ex_mes4"/>
+                <field name="ex_mes3"/>
+                <field name="ex_mes2"/>
+                <field name="ex_mes1"/>
+                <field name="total"/>
+                <field name="prom"/>
+                <field name="min"/>
+            </tree>
+        </field>
+        </record>
+    </data>
+</odoo>

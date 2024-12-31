@@ -1,0 +1,129 @@
+<odoo>
+  <data>
+
+    <!-- Top Menu Aplicaion Kenex -->
+    <menuitem name="Kenex" id="kenex.menu_root"/>
+
+    <!-- Menu Principal Ventas-->
+    <menuitem name="Ventas" id="kenex.menu_ventas"         parent="kenex.menu_root"/>
+    
+    <!-- Menu Principal Opciones Comisiones -->
+    <menuitem name="Comisiones"       id="kenex.menu_comisiones"       parent="kenex.menu_root"/>
+      <menuitem name="Comisiones Vtas/Mayor"      id="kenex.submenu_1" parent="kenex.menu_comisiones"></menuitem> 
+
+    <menuitem name="Calculo de Comisiones x Ventas"  id="kenex.menu_comisiones_2" parent="kenex.submenu_1"  
+              action="kenex.action_window_calculo_comisiones"/>  
+
+    <menuitem name="Reporte Detallado de Comisiones" id="kenex.menu_comisiones_3" parent="kenex.submenu_1"
+              action="kenex.action_window_reporte_comisiones"/>  
+
+    <menuitem name="Reporte Pago de Comisiones"      id="kenex.menu_comisiones_4" parent="kenex.submenu_1"
+              action="kenex.action_window_report_pago_comisiones"/> 
+
+    
+    <!-- Menu Principal Opciones Bonos   -->
+    <menuitem name="Comisiones"                      id="kenex.menu_comisiones"     parent="kenex.menu_root"/>
+      <menuitem name="Calculo Comisiones Tienda"     id="kenex.submenu_5"           parent="kenex.menu_comisiones"></menuitem> 
+
+    <menuitem name="Calculo Comisiones Tienda"       id="kenex.menu_comisiones_5" parent="kenex.submenu_5"
+          action="kenex.action_window_calculo_comisiones_tienda"/>   
+
+    <menuitem name="Reporte de Comisiones Tienda/vendedor" id="kenex.menu_comisiones_6" parent="kenex.submenu_5"
+              action="kenex.action_window_reporte_comisiones_tienda"/>  
+
+    <!-- Menu Principal Opciones Bonos   -->
+    <menuitem name="Comisiones"                      id="kenex.menu_comisiones"     parent="kenex.menu_root"/>
+      <menuitem name="Bonos"                         id="kenex.submenu_2"           parent="kenex.menu_comisiones"></menuitem> 
+  
+    <menuitem name="Reporte Calculo Bono"            id="kenex.menu_comisiones_7"   parent="kenex.submenu_2"
+              action="kenex.action_kbono_calculo_windows"/> 
+
+    
+    <!-- Menu Principal Ajustes Comisiones -->
+
+    <menuitem name="Ajustes"       id="kenex.menu_ajustes"     parent="kenex.menu_root"/>
+      <menuitem name="Comisiones Vtas/Mayor"           id="kenex.submenu_3"          parent="kenex.menu_ajustes"></menuitem> 
+
+    <menuitem name="Porcentaje x Marca y Tipo/Precio"         id="kenex.menu_ajustes_8" parent="kenex.submenu_3"  
+              action="kenex.action_kporcentaje_marca_windows"/>  
+
+    <menuitem name="Ajustes"       id="kenex.menu_ajustes"     parent="kenex.menu_root"/>
+      <menuitem name="Comisiones Tienda"           id="kenex.submenu_4"          parent="kenex.menu_ajustes"></menuitem>
+
+    <menuitem name="Porcentaje de Comisiones x Meta y Tienda"         id="kenex.menu_ajustes_9" parent="kenex.submenu_4"  
+              action="kenex.action_kporcentaje_comisiones_windows"/> 
+
+    <!-- Menu Principal Ajustes Bonos -->
+    <menuitem name="Ajustes"       id="kenex.menu_ajustes"     parent="kenex.menu_root"/>
+      <menuitem name="Bonos"       id="kenex.submenu_6"        parent="kenex.menu_ajustes"></menuitem> 
+
+    <menuitem name="Importar y Generar Bonos"    id="kenex.menu_ajustes_10" parent="kenex.submenu_6"
+              action="kenex.action_kbono_arinbo_windows"/>   
+
+    <menuitem name="Bono x Rango de Fecha"       id="kenex.menu_ajustes_11" parent="kenex.submenu_6"
+              action="kenex.action_kbono_comisiones_windows"/>   
+
+    <menuitem name="Bono x Detalle de Articulos" id="kenex.menu_ajustes_12" parent="kenex.submenu_6"
+              action="kenex.action_kbono_detalle_windows"/>  
+
+    <!-- actions menu ventas Marcas -->
+    <menuitem name="Marcas" id="kenex.menu_ajustes_13" parent="kenex.menu_ajustes"
+              action="kenex.action_product_brand_window1"/> 
+
+    <!-- actions menu Estados de WMS -->
+    <menuitem name="Estados WMS" id="kenex.menu_ajustes_18" parent="kenex.menu_ajustes"
+              action="kenex.action_estados_wms_window1"/> 
+
+
+    <!-- Crea funciones del sistema de comisiones 
+    <menuitem name="Sistema" id="kenex.menu_ajustes_13" parent="kenex.submenu_6"
+              action="kenex.action_kcrea_funcion_windows"/>  
+    -->
+    
+    <!-- Menu Principal Inventario -->
+    <menuitem name="Inventario" id="kenex.menu_inventario" parent="kenex.menu_root"/>
+
+<!-- Menu Principal Contabilidad -->
+    <menuitem name="Contabilidd" id="kenex.menu_contabilidad" parent="kenex.menu_root"/>
+
+    <!-- actions menu Contabilidad Facturas-->
+    <menuitem name="Facturas" id="kenex.menu_contabilidad1" parent="kenex.menu_contabilidad"
+              action="kenex.action_facturas_venta_window1"/>    
+
+    <!-- actions menu ventas reporte refe-->
+    <menuitem name="Referencia en Pedidos" id="kenex.menu_venta_1" parent="kenex.menu_ventas"
+              action="kenex.action_window_report_refe"/>    
+
+    <!-- actions menu ventas reporte psi-->
+    <menuitem name="Reporte PSI" id="kenex.menu_venta_13" parent="kenex.menu_ventas"
+              action="kenex.action_window_report_psi"/> 
+
+    <!-- actions menu ventas Pedidos-->
+    <!-- <menuitem name="Pedidos" id="kenex.menu_venta_4" parent="kenex.menu_ventas"
+              action="kenex.action_pedidos_window1"/>  -->
+
+    <!-- actions menu ventas Productos-->
+    <menuitem name="Productos" id="kenex.menu_venta_5" parent="kenex.menu_ventas"
+              action="kenex.action_productos_template_window1"/> 
+
+<!-- actions menu ventas Lista de Tipos de Precios -->
+    <menuitem name="Tipos de Precios" id="kenex.menu_venta_9" parent="kenex.menu_ventas"
+              action="kenex.action_product_pricelist_item_tree_window7"/> 
+
+<!-- actions menu ventas Lista de Tipos de x Vendedor -->
+    <menuitem name="Lista de Precio x Vendedor" id="kenex.menu_venta_12" parent="kenex.menu_ventas"
+              action="kenex.action_product_pricelist_sellers_tree_window1"/> 
+
+<!-- actions Menu Inventario reporte Macro90-->
+    <menuitem name="Macro 90" id="kenex.menu_inventario_1" parent="kenex.menu_inventario"
+              action="kenex.action_window_report_macro90"/> 
+
+    <!-- actions Menu Inventario Revison de Pedido -->
+    <!-- <menuitem name="Revision de Pedidos" id="kenex.menu_inventario_2" parent="kenex.menu_inventario"
+              action="kenex.action_developer_window"/> -->
+
+    <!-- actions Menu Inventario Transferencia -->
+    <menuitem name="Transferencia" id="kenex.menu_inventario_3" parent="kenex.menu_inventario"
+              action="kenex.action_tree_stock_picking1"/> 
+  </data>
+</odoo>

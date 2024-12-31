@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <templates id="template" xml:space="preserve"> 
+    <t t-name="ClientDetailsEditIdent"  t-extend="PartnerDetailsEdit"  t-inherit-mode="extension" owl="1" >
+        <span class="label">ENTREEEEEE </span>
+        <xpath expr="//div[class('partner-details-right')]" position="inside">
+            <div class='client-details-box clearfix'>
+                <div class='client-detail'>
+                        <span class="label">Cedula </span>
+                        <input class="detail client-address-street" name="it_cedula_cliente_id"
+                                            t-on-change="captureChange" t-att-value="props.partner.it_cedula_cliente_id" />
+                </div>
+            </div>        
+        </xpath>
+    </t>     

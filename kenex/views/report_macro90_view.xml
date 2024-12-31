@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="kenex.form_view_report_master90">
+        <field name="name"> Reporte Macro 90 Lista </field>
+        <field name="model">report.macro90</field>
+        <field name="arch" type="xml">
+            <tree create="false" edit="false">
+                <field name="articulo"/>
+                <field name="existencia_kt"/>
+                <field name="bonos_kt"/>
+                <field name="existencia_srzl"/>
+                <field name="bonos_srzl"/>
+                <field name="transito_kt"/>
+                <field name="transito_real"/>
+                <field name="disponible_kt"/>
+                <field name="ped_pendiente_kt"/>
+                <field name="pre_pedidos_pendientes_kt"/>
+                <field name="autorizado_kt"/>
+                <field name="ultimo_costo"/>
+                <field name="precio_base"/>
+                <field name="costo_promedio"/>
+                <field name="precio_base_al"/>
+                <field name="ex_wh"/>
+                <field name="ex_cubitt_albrook_tigre"/>
+                <field name="ex_mayor_panama"/>
+                <field name="ex_casio_albrook_carrusel"/>
+                <field name="ex_multiplaza"/>
+                <field name="ex_metromall"/>
+                <field name="ex_albrook_pinguino"/>
+                <field name="ex_altaplaza_mall"/>
+                <field name="ex_los_andes_mall"/>
+                <field name="ex_westland_mall"/>
+                <field name="ex_basaidai"/>
+                <field name="lista_precio_an"/>
+                <field name="lista_precio_cn"/>
+                <field name="lista_precio_do"/>
+                <field name="lista_precio_ds"/>
+                <field name="lista_precio_es"/>
+                <field name="lista_precio_fk"/>
+                <field name="lista_precio_fr"/>
+                <field name="lista_precio_fv"/>
+                <field name="lista_precio_ms"/>
+                <field name="lista_precio_p_plus"/>
+                <field name="lista_precio_pa"/>
+                <field name="lista_precio_pb"/>
+                <field name="lista_precio_pr"/>
+                <field name="lista_precio_ta"/>
+                <field name="lista_precio_tm"/>
+            </tree>
+        </field>
+        </record>
+    </data>
+</odoo>

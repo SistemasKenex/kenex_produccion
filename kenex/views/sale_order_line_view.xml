@@ -1,0 +1,29 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="sale_order_line_view_inherit_1">
+            <field name="name">sale.order.line.view.inherit</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='order_line']/tree/field[@name='product_uom_qty']" position="after">
+                    <field name="it_country_id" optional="hide"/>
+                    <field name="it_product_pricelist_id"/>
+                </xpath>
+                <xpath expr="//field[@name='order_line']/tree/field[@name='price_unit']" position="before">
+                        <field name="it_check_value_sale" optional="hide"/>
+                </xpath>
+                <xpath expr="//field[@name='payment_term_id']" position="after">
+                    <field name="it_check_aprobar_empaque_vendedor"/>
+                    <field name="it_check_aprobar_facturacion_vendedor"/>
+                    <field name="it_check_aprobar_empaque" />
+                    <field name="it_check_aprobar_facturacion" />
+                    <field name="it_check_solicitar_pre_venta" />
+                    <field name="it_check_aprobar_pre_venta" />
+                </xpath>
+                <xpath expr="//field[@name='partner_shipping_id']" position="after">
+                    <field name="it_estado_en_wms" />
+                </xpath>
+            </field>
+        </record>	
+    </data>
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    <!-- explicit  view  tree Product Brand -->
+        <record model="ir.ui.view" id="kenex.product_view_tree_product_brand">
+            <field name="name">Marcas</field>
+            <field name="model">product.brand</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo> 

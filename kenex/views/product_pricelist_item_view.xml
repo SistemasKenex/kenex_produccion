@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- explicit  view  Search ProductPriceItem -->
+        <record model="ir.ui.view" id="kenex.product_pricelist_item_tree_window5">
+            <field name="name">product.pricelist.item.tree.view1</field>
+            <field name="model">product.pricelist.item</field>
+            <field name="priority" eval="1"/>
+            <field name="arch" type="xml">
+                <tree create="0" delete='0'>
+                    <field name="company_id" optional="hide"/>
+                    <field name="product_tmpl_id"/>
+                    <field name="pricelist_id"/>
+                    <field name="fixed_price"/>
+                </tree>  
+            </field>
+        </record>
+</odoo>

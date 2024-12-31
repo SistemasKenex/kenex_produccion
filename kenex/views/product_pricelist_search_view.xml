@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- explicit  view  Search ProductPrice List -->
+    <record model="ir.ui.view" id="product_pricelist_item_view_search">
+        <field name="name">product.pricelist.item.search</field>
+        <field name="model">product.pricelist.item</field>
+        <field name="inherit_id" ref="product.product_pricelist_item_view_search"/>
+        <field name="arch" type="xml">
+                <xpath expr="//field[@name='pricelist_id']" position="before"> 
+                    <field name="product_tmpl_id" groups="base.group_multi_currency" widget='selection'/>
+                </xpath> 
+        </field>
+    </record>
+</odoo>

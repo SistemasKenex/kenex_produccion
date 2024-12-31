@@ -1,0 +1,24 @@
+
+<odoo>
+    <data>
+        <record id="users_pricelist_form_view1" model="ir.ui.view">
+            <field name="name">users.pricelist.form</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form"></field>
+
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//form/sheet/notebook/page[@name='preferences']" position="after">
+                        <page string="(Tipos de Precios)">
+                            <group name="it_new_users_pricelist2">
+                                <group name="it_new_fields_user_pricelist_3" string="Tipos de Precios">
+                                    <field name="it_pricelist_id"/>
+                                </group>
+                            </group>
+                        </page>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+    </data>
+</odoo>

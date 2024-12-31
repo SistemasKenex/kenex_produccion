@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- explicit  view  tree kporcentaje.comisiones -->
+        <record model="ir.ui.view" id="kenex.action_kporcentaje_comisiones_view">
+            <field name="name">Porcentaje de Comisiones x Meta y Tienda</field>
+            <field name="model">kporcentaje.comisiones</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="company_id"/> 
+                    <field name="tienda_id"/>
+                    <field name="monto_desde"/>
+                    <field name="monto_hasta"/>
+                    <field name="porcentaje"/>
+                    <field name="ind_porc_desc"/>
+                    <field name="porc_descuento"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo> 

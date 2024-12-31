@@ -1,0 +1,5 @@
+<odoo>
+	<record id="group_boton_vendedores" model="res.groups">
+		<field name="name">Boton Vendedores</field>
+	</record>
+</odoo>

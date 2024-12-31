@@ -1,0 +1,23 @@
+<odoo>
+    <data>
+    <!-- Vista tipo tree   Aprobar Empaque, Aprobar Facturacion  -->  
+            <record model="ir.ui.view" id="sale_order_view_tree_12">
+            <field name="name">sale.order.view.inherit12</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_tree"/>
+            <field name="priority" eval="1"/>
+            <field name="arch" type="xml">
+                <!-- <xpath expr="//tree" position="attributes">
+                    <attribute name="multi_edit">'1'</attribute>
+                </xpath> -->
+                <xpath expr="//field[@name='amount_total']" position="before">            
+                    <field name="it_check_aprobar_empaque_vendedor"     optional="hide" />
+                    <field name="it_check_aprobar_facturacion_vendedor" optional="hide" />
+                    <field name="it_check_aprobar_empaque"              optional="hide" />
+                    <field name="it_check_aprobar_facturacion"          optional="hide" />
+                    <field name="it_estado_en_wms"                      optional="hide" />
+                </xpath>
+            </field>
+        </record>	    
+    </data>
+</odoo> 

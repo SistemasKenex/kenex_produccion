@@ -1,0 +1,15 @@
+<odoo>
+    <data>    
+        <record model="ir.ui.view" id="kenex.form_view_pedidos_pedidos">
+            <field name="name">Revision de Pedidos</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="mode">primary</field>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='order_line']/tree/field[@name='price_unit']" position="before">
+                        <field name="it_check_value_sale" optional="hide"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

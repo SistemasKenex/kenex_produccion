@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- explicit  view  tree kporcentaje_marca -->
+        <record model="ir.ui.view" id="kenex.action_kporcentaje_marca_view">
+            <field name="name">Porcentaje x Marca</field>
+            <field name="model">kporcentaje.marca</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="company_id"/>
+                    <field name="marca_id"/>
+                    <field name="pricelist_id"/>
+                    <field name="porc_comision"/>
+                    <field name="ind_rep_comision"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="calculo_comisiones_id">
+            <field name="name">calculo_comisones_view_notebook</field>
+            <field name="model">kdetalle.comisiones</field>
+            <field name="arch" type="xml">
+                <form string='Calculo de Comisiones'>
+                    <header>
+                        <button name="btn_calcular" type="object" string="Calcular" class="oe_highlight" />
+                    </header>
+                        <notebook>
+                            <page string="Parametros" name="parametros">
+                                <sheet>
+                                    <group>
+                                        <group>
+                                            <field name="company" options="{'no_create': True, 'no_create_edit':True}"/>
+                                            <field name="fechadesde" options="{'no_create': True, 'no_create_edit':True}"/>
+                                            <field name="fechahasta" options="{'no_create': True, 'no_create_edit':True}"/>
+                                        </group>                    
+                                    </group>
+                                </sheet>  
+                            </page>
+                            <page string="Calculos " name="calculo1" id='page2_id'>
+                                <tree create="0">
+                            <!-- <field name="order_id"/> -->
+                                    <field name="name"/>
+                                    <field name="date_order"/>
+                                    <field name="cliente_id"/>
+                                    <field name="vendedor_id"/>
+                                    <field name="pricelist_id"/>
+                                    <field name="porc_comision"/>
+                                    <field name="bono_comision"/>
+                                    <field name="tot_bono_comision"/>
+                                   <!--   <field name="marca_id"/> -->
+                                    <field name="price_total"/>
+                                    <field name="precio_base"/>
+                                   <!--  <field name="porcentaje"/> -->
+                                   <field name="margen"/>
+                                   <field name="porc_margen"/>
+                                </tree>
+                            </page>
+                        </notebook>                             
+                </form>                    
+                
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="kenex.calculo_comisiones_notebook1">
+            <field name="name">calculo_comisones_view_notebook</field>
+            <field name="model">kdetalle.comisiones</field>
+            <field name="arch" type="xml">
+                    <tree create="0" delete='0'>
+                    <header>
+                            <button name="action_view_order_lines" type="object" string="Consultar Ventas" class="oe_highlight" />
+                            <button name="action_view_anulaciones" type="object" string="Consultar Anulaciones" class="oe_highlight" />
+                            <button name="action_view_order" type="object" string="Consultar Pedido" class="oe_highlight" />
+                    </header>
+                                    <!-- <field name="order_id"/> -->
+                                    <field name="name"/>
+                                    <field name="date_order"/>
+                                    <field name="cliente_id"/>
+                                    <field name="vendedor_id"/>
+                                    <field name="price_total"/>
+                                    <field name="devolucion"/>
+                                    <field name="doc_orig_dev"/>
+                                    <field name="pricelist_id"/>
+                                    <field name="porc_comision"/>
+                                    <field name="bono_comision"/>
+                                    <field name="tot_bono_comision"/>
+                                    <field name="precio_base"/>
+                                    <field name="margen"/>
+                                    <field name="porc_margen"/>
+                    </tree>
+            </field>
+        </record>
+    </data>
+</odoo>        
+

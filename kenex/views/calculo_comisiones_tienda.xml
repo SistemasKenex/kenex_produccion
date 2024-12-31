@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="calculo_comisiones_tienda_id">
+            <field name="name">calculo_comisones_tienda_notebook</field>
+            <field name="model">kdetalle.comisiones.tienda</field>
+            <field name="arch" type="xml">
+                <form string='Calculo de Comisiones Tienda'>
+                    <header>
+                        <button name="btn_calcular" type="object" string="Calcular" class="oe_highlight" />
+                    </header>
+                        <notebook>
+                            <page string="Parametros" name="parametros">
+                                <sheet>
+                                    <group>
+                                        <group>
+                                            <field name="company" options="{'no_create': True, 'no_create_edit':True}"/>
+                                            <field name="fechadesde" options="{'no_create': True, 'no_create_edit':True}"/>
+                                            <field name="fechahasta" options="{'no_create': True, 'no_create_edit':True}"/>
+                                        </group>                    
+                                    </group>
+                                </sheet>  
+                            </page>
+                        </notebook>                             
+                </form>                    
+                
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="kenex.calculo_comisiones_tienda_notebook1">
+            <field name="name">calculo_comisones_tienda_notebook</field>
+            <field name="model">kdetalle.comisiones.tienda</field>
+            <field name="arch" type="xml">
+                    <tree create="0" delete='0'>
+                    <header>
+                            <button name="action_view_order_lines" type="object" string="Consultar Ventas" class="oe_highlight" />
+                    </header>
+                        <field name="periodo"/>
+                        <field name="vendedor_id"/>
+                        <field name="tienda_id"/>
+                        <field name="monto_factura"/>
+                        <field name="monto_descuento"/>
+                        <field name="sub_total"/>
+                        <!--<field name="total_factura"/>-->
+                        <field name="porc_descuento"/>
+                        <field name="comision_descuento"/>
+                        <field name="porc_comision"/>
+                        <field name="comision_ventas"/>
+                        <field name="bono"/>
+                        <field name="monto_meta"/>
+                        <field name="comision_descuento_ventas"/>
+                        <!--<field name="comision_a_pagar"/>-->
+                    </tree>
+            </field>
+        </record>
+    </data>
+</odoo>        

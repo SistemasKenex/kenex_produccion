@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sale_order_standard_price_hide" model="ir.ui.view">
+        <field name="name">peoduct.template.standard.price.hide</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_tree_view"/>
+        <field name="arch" type="xml">
+            <!-- <xpath expr="//label[@for='Coste']" position ='attributes'> -->
+            <xpath expr="//field[@name='standard_price']" position="attributes"> 
+                <attribute name="groups">hide_sale_margin_sf.group_show_margin_sale</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

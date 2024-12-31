@@ -1,0 +1,17 @@
+<odoo>
+    <data>
+    <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="kenex.form_view_report_ejemplo">
+        <field name="name"> Reporte Ejemplo Kenex </field>
+        <field name="model">report.kenex.product</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="create_date"/>
+                <field name="uom_id"/>
+                <field name="default_code"/>
+                <field name="list_price"/>
+            </tree>
+        </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,21 @@
+<odoo>
+    <data>
+    <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="kenex.form_view_report_pago_comisiones">
+        <field name="name"> Reporte Pago de Comisiones </field>
+        <field name="model">report.pago.comisiones</field>
+        <field name="arch" type="xml">
+            <tree create="false" edit="false">
+                <field name="documento"/>
+                <field name="fecha"/>
+                <field name="cliente"/>
+                <field name="vendedor"/>
+                <field name="comision"/>
+                <field name="bono_comision"/>
+                <field name="tot_bono_comision"/>
+                <field name="ventas"/>
+            </tree>
+        </field>
+        </record>
+    </data>
+</odoo>

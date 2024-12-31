@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    <!-- explicit  view  tree kbono.detalle -->
+        <record model="ir.ui.view" id="kenex.action_kbono_detalle_view">
+            <field name="name">Bonos Detalle de Articulos</field>
+            <field name="model">kbono.detalle</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <!-- <field name="company_id"/> 
+                    <field name="codigo_bono_id"/> -->
+                    <field name="warehouse_id"/>
+                    <field name="product_id"/>
+                    <field name="monto_bono"/>
+                    <field name="meta"/>
+                    <field name="monto_meta"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo> 

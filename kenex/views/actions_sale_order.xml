@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- explicit  actions Menu Models Sal Oder Lista de Precio 1 -->
+        <record model="ir.actions.server" id="actions_custom_sale_order">
+            <field name="name">Consultar Tipos de Precio</field>
+            <field name="model_id" ref="sale.model_sale_order"/>
+            <field name="binding_model_id" ref="sale.model_sale_order"/>
+            <field name="binding_view_types">form,list</field>
+            <field name="state">code</field>
+            <field name="code">action = records.actions_funcion()</field>
+        </record>
+    </data>    
+</odoo>
+
+

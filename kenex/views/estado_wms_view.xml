@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    <!-- explicit  view  tree Product Brand -->
+        <record model="ir.ui.view" id="kenex.estados_wms_view">
+            <field name="name">Estados de WMS</field>
+            <field name="model">estados.wms</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo> 

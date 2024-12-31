@@ -1,0 +1,5 @@
+<odoo>
+	<record id="group_show_solicitud" model="res.groups">
+		<field name="name">Permite Solicitar Aprobaciones</field>
+	</record>
+</odoo>

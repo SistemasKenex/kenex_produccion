@@ -1,0 +1,22 @@
+<odoo>
+    <data>
+    <!-- explicit list view definition -->
+        <record id="refe_search_view" model="ir.ui.view">
+            <field name="name">report.refe_search</field>
+            <field name="model">report.refe</field>
+            <field name="arch" type="xml">
+                <search string="articulo">
+                    <field name="articulo"/>
+                    <field name="nro_pedido"/>
+                    <field name="fecha"/>
+                    <field name="nombre_cliente"/>
+                    <field name="precio"/>
+                    <field name="pais"/>
+                    <field name="estado_cotizacion"/>
+                    <field name="estado_bodega"/>
+                    <field name="vendedor"/>
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,24 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "172.16.18.20",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "BD ODOO DESARROLLO",
+            "database": "db_odoo",
+            "username": "odoo",
+            "password": "casio123"
+        },
+        {
+            "previewLimit": 50,
+            "server": "172.16.18.20",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "database": "odoo_db",
+            "name": "Odoo Desarrollo",
+            "username": "odoo",
+            "password": "casio123"
+        }
+    ]
+}
